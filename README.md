@@ -13,11 +13,8 @@ Sử Dụng Python để tự động chạy tác vụ trên linux
     - `sudo pip install schedule` <br>
 
 #III. Bắt đầu sử dụng
-  ```
-  git clone https://github.com/vdcit/Python-Schedule/ <br> 
-  cd Python-Schedule <br>
-  python auto.py <br> ```
-
-
+  git clone https://github.com/vdcit/Python-Schedule/
+  cd Python-Schedule 
+  python auto.py
 
  
