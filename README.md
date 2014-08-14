@@ -21,7 +21,7 @@ Sử Dụng Python để tự động chạy tác vụ trên linux
 ###Sửa file auto.py theo ý muốn  ###
  - gánbiến `command` = câu lệnh ta cần chạy ,
  
-- gán biến `directory` bằng đường dẫn ta muốn lưư file log .
+ - gán biến `directory` bằng đường dẫn ta muốn lưư file log .1111
 
  - Câu lệnh `schedule.every(15).seconds.do(job)` tức là mỗi 15 giây chạy hàm `job` 1 lần . ta có thể thay `second` bằng `minute` , `hour` , `day` hoặc bất kỳ ngày ào đó trong tuần ví dụ như `monday` hoặc `sunday`
  - Ta có thể chỉ định chính xác lúc ngày giờ nào nó sẽ chạy hàm `job` bằng câu lệnh 
@@ -29,7 +29,7 @@ Sử Dụng Python để tự động chạy tác vụ trên linux
 schedule.every().wednesday.at("13:15").do(job)
 ```
 thay `wednesday` bằng ngày và `13.15` bằng thời gian cần chạy
- - file log sẽ có dạng `năm-tháng-ngày giờ-phút-giây.txt`###<br>
+ - file log sẽ có dạng `năm-tháng-ngày giờ-phút-giây.txt`<br>
 
 **sửa file xong rồi bắt đầu chạy thôi :**<br>
 ```
