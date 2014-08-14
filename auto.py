@@ -4,15 +4,15 @@ import subprocess
 import sys
 import datetime
 
-"""command = raw_input('Nhap vao cau lenh muon chay: ')
-directory = raw_input('duong dan muon luu file log: ')"""
+"""Thay doi cau lenh va duong dan o day"""
+command = '/home/cherry/Documents/test.sh'
+directory = '/home/cherry/Documents'
 
+"""Ham chay lenh"""
 def job():
     today = datetime.datetime.now()
     """sstrftime("%Y-%m-%d %H:%M")"""
-
-    """ Sua cau lenh va duong dan o day"""
-    subprocess.Popen(['/bin/bash', '-c','/home/cherry/Documents/test.sh >> /home/cherry/Documents/"%s".txt'% today])
+    subprocess.Popen(['/bin/bash', '-c','%s >> %s/"%s".txt'% (command, directory, today)])
 
 """def job1():
     today = datetime.datetime.now()
