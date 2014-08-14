@@ -5,6 +5,7 @@ Sử Dụng Python để tự động chạy tác vụ trên linux
   Thư viện schedule của python có thể giúp ta dẽ dàng chạy một tác vụ nào đó hằng ngày hoặc vào bất kỳ một thời gian cụ thể nào . Nó sử dụng đơn giản hơn crontab của linux .
 
 #II. Chuẩn bị #
+##Script được viết cho python 2.6.x trở nên nhưng không dùng cho python 3.x.x ##
 ### Để cài đặt schedule ta cần cài nhưng gói sau ###
   1. Cài đặt`python-pip` <br>
     - trên ubuntu, debian : `sudo apt-get install python-pip` <br>
@@ -32,6 +33,7 @@ thay `wednesday` bằng ngày và `13.15` bằng thời gian cần chạy
  - file log sẽ có dạng `năm-tháng-ngày giờ-phút-giây.txt`<br>
 
 **sửa file xong rồi bắt đầu chạy thôi :**<br>
+
 ```
   python auto.py
 ```
