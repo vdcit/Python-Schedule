@@ -17,11 +17,22 @@ Sử Dụng Python để tự động chạy tác vụ trên linux
   git clone https://github.com/vdcit/Python-Schedule/
   cd Python-Schedule 
   ```
-  
-### ta sửa file auto.py gán biến `command` = câu lệnh ta cần chạy , gán biến `directory` bằng đường dẫn ta muốn lưư file log . file log sẽ có dạng `năm-tháng-ngày giờ-phút-giây.txt`###
-*sửa file xong rồi bắt đầu chạy thôi :*<br>
+<br>  
+###Sửa file auto.py theo ý muốn  ###
+ - gánbiến `command` = câu lệnh ta cần chạy ,
+ 
+- gán biến `directory` bằng đường dẫn ta muốn lưư file log .
+
+ - Câu lệnh `schedule.every(15).seconds.do(job)` tức là mỗi 15 giây chạy hàm `job` 1 lần . ta có thể thay `second` bằng `minute` , `hour` , `day` hoặc bất kỳ ngày ào đó trong tuần ví dụ như `monday` hoặc `sunday`
+ - Ta có thể chỉ định chính xác lúc ngày giờ nào nó sẽ chạy hàm `job` bằng câu lệnh 
+```
+schedule.every().wednesday.at("13:15").do(job)
+```
+thay `wednesday` bằng ngày và `13.15` bằng thời gian cần chạy
+ - file log sẽ có dạng `năm-tháng-ngày giờ-phút-giây.txt`###<br>
+
+**sửa file xong rồi bắt đầu chạy thôi :**<br>
 ```
   python auto.py
 ```
 
-chờ đợi kết quả thôi ....
