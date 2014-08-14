@@ -35,6 +35,6 @@ thay `wednesday` bằng ngày và `13.15` bằng thời gian cần chạy
 ```
   python auto.py
 ```
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 **để ngừng chạy ta dùng `Ctrl + C`**
 
