@@ -22,16 +22,16 @@ def job():
 schedule.every(15).seconds.do(job)
 
 """Sau moi tieng chay ham job mot lan"""
-schedule.every().hour.do(job)
+# schedule.every().hour.do(job)
 
 """Chay ham job hang ngay vao luc 10h30p"""
-schedule.every().day.at("10:30").do(job)
+# schedule.every().day.at("10:30").do(job)
 
 """Moi thu hai chay ham mot lan"""
-schedule.every().monday.do(job)
+# schedule.every().monday.do(job)
 
 """chay ham job vao moi thu 3 luc 13h15p"""
-schedule.every().wednesday.at("13:15").do(job)
+# schedule.every().wednesday.at("13:15").do(job)
 
 while True:
     schedule.run_pending()
