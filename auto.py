@@ -18,19 +18,25 @@ def job():
     today = datetime.datetime.now()
     subprocess.Popen(['/bin/bash', '-c','%s >> %s/"%s".txt'% (command, directory, today)])"""
 
-"""Sau 15 giay chay ham job mot lan"""
+"""Thu thi chuong trinh 15 giay mot lan"""
+print 'Thu thi chuong trinh 15 giay mot lan'
+print 'An to hop CTL + C de thoat'
 schedule.every(15).seconds.do(job)
 
 """Sau moi tieng chay ham job mot lan"""
+# print 'Thu thi chuong trinh 1 lan / 1 gio'
 # schedule.every().hour.do(job)
 
-"""Chay ham job hang ngay vao luc 10h30p"""
+"""Thuc thi chuong trinh vao luc 10h30 phut hang ngay"""
+# print 'Thuc thi chuong trinh vao luc 10h30 phut hang ngay'
 # schedule.every().day.at("10:30").do(job)
 
-"""Moi thu hai chay ham mot lan"""
+"""Thu thi chuong trinh vao thu 2 hang tuan"""
+# print 'Thu thi chuong trinh vao thu 2 hang tuan'
 # schedule.every().monday.do(job)
 
-"""chay ham job vao moi thu 3 luc 13h15p"""
+"""Thu thi chuong trinh vao thu 3 hang tuan, luc 13h15phut"""
+# print 'Thu thi chuong trinh vao thu 3 hang tuan, luc 13h15phut'
 # schedule.every().wednesday.at("13:15").do(job)
 
 while True:
