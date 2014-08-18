@@ -20,7 +20,7 @@ Sử Dụng Python để tự động chạy tác vụ trên linux
   ```
 
 
-### Giớ thiệu về các sử dụng auto.py
+### Giới thiệu về các sử dụng auto.py
 
  - gán biến `command` = câu lệnh ta cần chạy ,
  
