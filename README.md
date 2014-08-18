@@ -1,10 +1,10 @@
 Sử Dụng Python để tự động chạy tác vụ trên linux
 ================================================
 
-# I. Giới thiệu#
+# I. Giới thiệu 
   Thư viện schedule của python có thể giúp ta dẽ dàng chạy một tác vụ nào đó hằng ngày hoặc vào bất kỳ một thời gian cụ thể nào . Nó sử dụng đơn giản hơn crontab của linux .
 
-# II. Chuẩn bị #
+# II. Chuẩn bị 
 ## Script được viết cho python 2.6.x trở lên nhưng không dùng cho python 3.x.x ##
 ### Để cài đặt schedule ta cần cài nhưng gói sau ###
   1. Cài đặt`python-pip` <br>
@@ -18,8 +18,10 @@ Sử Dụng Python để tự động chạy tác vụ trên linux
   git clone https://github.com/vdcit/Python-Schedule/
   cd Python-Schedule 
   ```
-<br>  
-### Sửa file auto.py theo ý muốn  ###
+
+
+### Giớ thiệu về các sử dụng auto.py
+
  - gán biến `command` = câu lệnh ta cần chạy ,
  
  - gán biến `directory` bằng đường dẫn ta muốn lưư file log.
@@ -32,7 +34,7 @@ schedule.every().wednesday.at("13:15").do(job)
 thay `wednesday` bằng ngày và `13.15` bằng thời gian cần chạy
  - file log sẽ có dạng `năm-tháng-ngày giờ-phút-giây.txt`<br>
 
-**sửa file xong rồi bắt đầu chạy thôi :**<br>
+### Thực thi file auto.py
 
 - Trong file auto.py sử dụng mặc định lệnh `schedule.every(15).seconds.do(job)`, các lệnh khác đã được comment, nếu bạn muốn sử dụng thì un-comment theo từng thời gian mong muốn.
 
