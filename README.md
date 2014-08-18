@@ -34,6 +34,8 @@ thay `wednesday` bằng ngày và `13.15` bằng thời gian cần chạy
 
 **sửa file xong rồi bắt đầu chạy thôi :**<br>
 
+- Trong file auto.py sử dụng mặc định lệnh `schedule.every(15).seconds.do(job)`, các lệnh khác đã được comment, nếu bạn muốn sử dụng thì un-comment theo từng thời gian mong muốn.
+
 ```
   python auto.py
 ```
