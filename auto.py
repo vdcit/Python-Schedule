@@ -12,11 +12,7 @@ directory = '/home/cherry/Documents'
 def job():
     today = datetime.datetime.now()
     """sstrftime("%Y-%m-%d %H:%M")"""
-    subprocess.Popen(['/bin/bash', '-c','%s >> %s/"%s".txt'% (command, directory, today)])
-
-"""def job1():
-    today = datetime.datetime.now()
-    subprocess.Popen(['/bin/bash', '-c','%s >> %s/"%s".txt'% (command, directory, today)])"""
+    subprocess.Popen(['/bin/bash', '-c','%s >> %s/"%s"-kq.txt'% (command, directory, today.strftime("%d%m%Y-%H%M%S"))])
 
 """Thu thi chuong trinh 15 giay mot lan"""
 print 'Thu thi chuong trinh 15 giay mot lan'
