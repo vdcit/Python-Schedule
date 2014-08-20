@@ -19,7 +19,7 @@ Sử Dụng Python để tự động chạy tác vụ trên linux
   cd Python-Schedule 
   ```
 
-
+## Sử Dụng auto.py
 ### Giới thiệu về các sử dụng auto.py
 
  - gán biến `command` = câu lệnh ta cần chạy ,
@@ -38,8 +38,14 @@ thay `wednesday` bằng ngày và `13.15` bằng thời gian cần chạy
 
 - Trong file auto.py sử dụng mặc định lệnh `schedule.every(15).seconds.do(job)`, các lệnh khác đã được comment, nếu bạn muốn sử dụng thì un-comment theo từng thời gian mong muốn.
 
+
 ```
   python auto.py
+```
+## Sủ dụng auto-v2.py
+
+```
+  python auto-v2.py
 ```
 ### Dừng chương trình
 - Thực hiện tổ hợp phím: `Ctrl + C`
